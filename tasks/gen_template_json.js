@@ -17,8 +17,12 @@ module.exports = function(grunt) {
 			grunt.fail.warn('Destination JSON file is missing', 3);
 		}
 
+        if ( ! this.data.base_template) {
+            return grunt.fail.warn('base_template is missing', 3);            
+        }
+        
         if ( ! this.data.src) {
-            return grunt.fail.warn('Src is missing. Object src: {file: {path: "", method: ""}} or src: {object: {key: value}} required', 3);            
+            return grunt.fail.warn('src is missing. Object src: {file: {path: "", method: ""}} or src: {object: {key: value}} required', 3);            
         }
 
         try {
@@ -29,7 +33,7 @@ module.exports = function(grunt) {
                 
                 // insert template.html
                 if (typeof obj.template !== 'undefined') {
-                    obj.template = grunt.file.read(config.src.config + "template.html");
+                    obj.template = grunt.file.read(this.data.base_template);
                 }
             }
             else if (typeof this.data.src.object === 'object') {
