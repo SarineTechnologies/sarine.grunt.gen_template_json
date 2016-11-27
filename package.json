@@ -1,0 +1,16 @@
+{
+  "name": "sarine.grunt.gen_template_json",
+  "version": "0.0.1",
+  "description": "Generate JSON",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SarineTechnologies/sarine.grunt.gen_template_json.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/SarineTechnologies/sarine.grunt.gen_template_json#readme"
+}
