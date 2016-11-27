@@ -1,5 +1,5 @@
 {
-  "name": "sarine.grunt.gen_template_json",
+  "name": "grunt-gen_template_json",
   "version": "0.0.1",
   "description": "Generate JSON",
   "main": "index.js",
